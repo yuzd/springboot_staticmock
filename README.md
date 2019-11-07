@@ -196,6 +196,12 @@
   Mockito.verify(userControllerMock, atMost(2)).login(anyString(),eq("123456"));
   ```
 
+#### verify一个静态方法被执行了多少次
+```
+PowerMockito.verifyStatic(DataFlowTracing.class, times(1));
+DataFlowTracing.milestone(any(MilestoneBean.class));
+```
+
 ### 注意点
 - `@SpringBootTest`并不是unit test 必需的
   - 用`@InjectMocked`注入被测对象，不需要`@SpringBootTest`注解
