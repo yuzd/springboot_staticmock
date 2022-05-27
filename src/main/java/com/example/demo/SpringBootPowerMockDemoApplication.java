@@ -17,11 +17,12 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class SpringBootPowerMockDemoApplication extends SpringBootServletInitializer {
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(SpringBootPowerMockDemoApplication.class);
-	}
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootPowerMockDemoApplication.class, args);
-	}
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(SpringBootPowerMockDemoApplication.class);
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootPowerMockDemoApplication.class, args);
+    }
 }

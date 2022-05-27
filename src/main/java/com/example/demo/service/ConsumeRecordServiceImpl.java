@@ -15,6 +15,7 @@ public class ConsumeRecordServiceImpl implements ConsumeRecordService {
 
   @Override
   public List<ConsumeRecord> findConsumeRecordForUser(String userId) {
+    String aa = FinalValidator.testStatic();
     return this.consumeRecordDAO.findConsumeRecordByUserId(userId);
   }
 }
